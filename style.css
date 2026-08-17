@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-graphite-900: #14181B;
+  --color-graphite-700: #232A2E;
+  --color-ice-50: #F1F5F6;
+  --color-ice-100: #E4EBEC;
+  --color-vapor-500: #3FC7D6;
+  --color-vapor-300: #8FE3E8;
+  --color-amber-500: #E29A4E;
+  --color-lavender-400: #A99BCB;
+  --color-moss-500: #6E9C7D;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-graphite-900 text-ice-50 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-[-0.02em];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-vapor-500 hover:bg-vapor-300 text-graphite-900 font-bold py-3 px-8 rounded transition-all duration-300 focus-visible:outline-2 focus-visible:outline-vapor-500 focus-visible:outline-offset-2;
+  }
+  
+  .btn-nav {
+    @apply bg-vapor-500 hover:bg-vapor-300 text-graphite-900 font-bold py-2 px-6 rounded transition-all duration-300 focus-visible:outline-2 focus-visible:outline-vapor-500 focus-visible:outline-offset-2;
+  }
+  
+  /* The Signature Element: Diamond-cut edge */
+  .diamond-edge-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 50% 100%, 0 calc(100% - 4vw));
+    padding-bottom: 6vw;
+  }
+  
+  .diamond-edge-top {
+    clip-path: polygon(0 4vw, 50% 0, 100% 4vw, 100% 100%, 0 100%);
+    padding-top: 6vw;
+  }
+
+  .nav-scrolled {
+    @apply bg-graphite-900/90 backdrop-blur-[12px] shadow-lg;
+  }
+  
+  /* Premium Backgrounds */
+  .bg-mesh-tech {
+    background-color: var(--color-graphite-900);
+    background-image: radial-gradient(at 0% 0%, rgba(63, 199, 214, 0.15) 0px, transparent 50%),
+                      radial-gradient(at 100% 100%, rgba(35, 42, 46, 0.8) 0px, transparent 50%);
+  }
+  
+  .bg-mesh-warm {
+    background-color: var(--color-graphite-900);
+    background-image: radial-gradient(at 100% 0%, rgba(226, 154, 78, 0.1) 0px, transparent 50%),
+                      radial-gradient(at 0% 100%, rgba(169, 155, 203, 0.1) 0px, transparent 50%);
+  }
+  
+  .bg-glass-dark {
+    background-color: var(--color-graphite-900);
+    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

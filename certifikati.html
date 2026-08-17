@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certifikati | Diamond Line</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="overflow-x-hidden pt-24 bg-glass-dark min-h-screen">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-graphite-900/90 backdrop-blur-[12px] shadow-lg text-ice-50 py-4 px-6 md:px-12 flex justify-between items-center">
+      <a href="/index.html" class="font-display font-bold text-2xl tracking-tighter">DIAMOND<span class="text-vapor-500">LINE</span></a>
+      <div class="hidden md:flex gap-8 items-center font-medium">
+        <a href="/index.html" class="hover:text-vapor-300 transition-colors">Domov</a>
+        <a href="/specifikacije.html" class="hover:text-vapor-300 transition-colors">Specifikacije</a>
+        <a href="/certifikati.html" class="hover:text-vapor-300 transition-colors text-vapor-500">Certifikati</a>
+        <a href="/kontakt.html" class="hover:text-vapor-300 transition-colors">Kontakt</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span id="lang-toggle" class="font-bold text-sm cursor-pointer hover:text-vapor-300 select-none">SL <span class="opacity-50">/ EN</span></span>
+        <a href="/kontakt.html" class="btn-nav">Naroči zdaj</a>
+      </div>
+    </nav>
+
+    <!-- Certifikati Hero -->
+    <header class="py-16 md:py-24 container mx-auto px-6 md:px-12 text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-[64px] font-bold mb-6 text-ice-50">Zaupanja <span class="text-vapor-500">vredno.</span></h1>
+      <p class="text-xl text-ice-100 max-w-2xl mx-auto mb-16">Diamond Line ustreza vsem najvišjim evropskim in svetovnim standardom kakovosti ter varnosti.</p>
+      
+      <div class="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+        <!-- Massively increased certs image -->
+        <img src="/assets/certifikati.webp" alt="Certifikati kakovosti" class="w-full max-w-4xl object-contain filter drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+      </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="bg-graphite-900 pt-24 pb-12 border-t border-graphite-700 mt-24">
+      <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div>
+          <a href="/index.html" class="font-display font-bold text-3xl tracking-tighter mb-6 block">DIAMOND<span class="text-vapor-500">LINE</span></a>
+          <p class="text-ice-100 mb-6 max-w-sm">
+            Premium ekološko čiščenje in industrijska moč za vaš dom.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-xl mb-6">Povezave</h3>
+          <ul class="space-y-4 text-ice-100">
+            <li><a href="/index.html" class="hover:text-vapor-500 transition-colors">Domov</a></li>
+            <li><a href="/specifikacije.html" class="hover:text-vapor-500 transition-colors">Specifikacije</a></li>
+            <li><a href="/certifikati.html" class="hover:text-vapor-500 transition-colors">Certifikati</a></li>
+            <li><a href="/kontakt.html" class="hover:text-vapor-500 transition-colors">Kontakt & Nakup</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-xl mb-6">Kontakt</h3>
+          <ul class="space-y-4 text-ice-100 leading-relaxed">
+            <li><strong>Diamond Line s.p.</strong></li>
+            <li>Ulica Milana Majcna 8,<br/>1000 Ljubljana</li>
+            <li>P.E. Bravničarjeva ulica 11</li>
+            <li>DŠ: 70541965</li>
+            <li class="pt-4">Vodja prodaje: Elvis Grbić</li>
+            <li>+386 69 982 707</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container mx-auto px-6 md:px-12 text-center text-ice-100 text-sm opacity-50 border-t border-graphite-700 pt-8">
+        &copy; 2026 Diamond Line. Vse pravice pridržane.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script>AOS.init({ once: true, offset: 50 });</script>
+  </body>
+</html>
