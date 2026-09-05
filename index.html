@@ -44,8 +44,9 @@
       }
     }
     </script>
-    <script type="module" crossorigin src="/Diamond_line/assets/main-BACfkEmN.js"></script>
-    <link rel="stylesheet" crossorigin href="/Diamond_line/assets/main-CyQ16tlW.css">
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script type="module" crossorigin src="/Diamond_line/assets/main-3pvICGHW.js"></script>
+    <link rel="stylesheet" crossorigin href="/Diamond_line/assets/main-DXjA3Rpl.css">
   </head>
   <body class="overflow-x-hidden">
     
@@ -54,10 +55,10 @@
       <a href="index.html" class="font-display font-bold text-2xl tracking-tighter">DIAMOND<span class="text-vapor-500">LINE</span></a>
             <!-- Desktop Links -->
       <div class="hidden md:flex gap-8 items-center font-medium">
-        <a href="index.html" class="hover:text-vapor-300 transition-colors text-vapor-500" data-i18n="nav.home">Domov</a>
-        <a href="specifikacije.html" class="hover:text-vapor-300 transition-colors" data-i18n="nav.specs">Specifikacije</a>
-        <a href="certifikati.html" class="hover:text-vapor-300 transition-colors" data-i18n="nav.certs">Certifikati</a>
-        <a href="kontakt.html" class="hover:text-vapor-300 transition-colors" data-i18n="nav.contact">Kontakt</a>
+        <a href="index.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.home">Domov</a>
+        <a href="specifikacije.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.specs">Specifikacije</a>
+        <a href="certifikati.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.certs">Certifikati</a>
+        <a href="kontakt.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.contact">Kontakt</a>
       </div>
       
       <!-- Desktop Actions -->
@@ -73,10 +74,10 @@
 
       <!-- Mobile Menu Overlay -->
       <div id="mobile-menu" class="fixed inset-0 bg-graphite-900 z-40 hidden flex-col items-center justify-center gap-8 text-xl font-medium opacity-0 transition-opacity duration-300">
-        <a href="index.html" class="hover:text-vapor-300 transition-colors" data-i18n="nav.home">Domov</a>
-        <a href="specifikacije.html" class="hover:text-vapor-300 transition-colors" data-i18n="nav.specs">Specifikacije</a>
-        <a href="certifikati.html" class="hover:text-vapor-300 transition-colors" data-i18n="nav.certs">Certifikati</a>
-        <a href="kontakt.html" class="hover:text-vapor-300 transition-colors" data-i18n="nav.contact">Kontakt</a>
+        <a href="index.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.home">Domov</a>
+        <a href="specifikacije.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.specs">Specifikacije</a>
+        <a href="certifikati.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.certs">Certifikati</a>
+        <a href="kontakt.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.contact">Kontakt</a>
         <span class="lang-toggle-btn font-bold cursor-pointer hover:text-vapor-300 select-none">SL <span class="opacity-50">/ EN</span></span>
         <a href="kontakt.html" class="btn-primary mt-4" data-i18n="nav.order">Naroči zdaj</a>
       </div>
@@ -86,7 +87,22 @@
     <header id="domov" class="relative min-h-screen flex items-center pt-24 diamond-edge-bottom">
       <div class="absolute inset-0 z-0">
         <!-- Hero Background -->
-        <img src="assets/diamond.webp" alt="Diamond Line Steam Cleaner" class="w-full h-full object-cover object-center" />
+        
+<!-- 3D Model Viewer -->
+<model-viewer 
+    src="assets/diamond_cleaner.glb" 
+    poster="assets/diamond.webp" 
+    alt="Diamond Line 3D" 
+    camera-controls 
+    auto-rotate 
+    rotation-per-second="30deg"
+    shadow-intensity="1"
+    environment-image="neutral"
+    class="w-full h-full object-cover object-center cursor-grab"
+    style="--poster-color: transparent;"
+>
+</model-viewer>
+
         <div class="absolute inset-0 bg-gradient-to-r from-graphite-900/90 to-graphite-900/20"></div>
       </div>
       
