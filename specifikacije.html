@@ -18,46 +18,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script type="module" crossorigin src="/Diamond_line/assets/main-D6Nfpb4r.js"></script>
-    <link rel="stylesheet" crossorigin href="/Diamond_line/assets/main-CQi05q40.css">
+    <script type="module" crossorigin src="/Diamond_line/assets/main-yOsqcTjo.js"></script>
+    <link rel="stylesheet" crossorigin href="/Diamond_line/assets/main-w0WWjPGO.css">
   </head>
   <body class="overflow-x-hidden pt-24 bg-mesh-tech min-h-screen">
     
-    <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-graphite-900/90 backdrop-blur-[12px] shadow-lg text-ice-50 py-4 px-6 md:px-12 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-3 group">
-          <img src="assets/diamond_icon_highres.png" alt="Diamond Line Icon" class="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-110" />
-          <img src="assets/diamond_line_text.png" alt="Diamond Line" class="h-6 md:h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />
-        </a>
-            <!-- Desktop Links -->
+                    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent text-ice-50 py-3 px-4 md:px-12 flex justify-between items-center">
+
+      <!-- Logo: icon on top, text below, centred -->
+      <a href="index.html" class="flex flex-col items-center gap-1 group">
+        <img src="assets/diamond_icon_highres.png" alt="Diamond Line Icon"
+             class="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-110 drop-shadow-lg" />
+        <img src="assets/diamond_line_text.png" alt="Diamond Line"
+             class="h-5 md:h-6 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />
+      </a>
+
+      <!-- Desktop Links -->
       <div class="hidden md:flex gap-8 items-center font-medium">
         <a href="index.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.home">Domov</a>
         <a href="specifikacije.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.specs">Specifikacije</a>
         <a href="certifikati.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.certs">Certifikati</a>
         <a href="kontakt.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.contact">Kontakt</a>
       </div>
-      
-      <!-- Desktop Actions -->
+
+      <!-- Desktop: lang + CTA -->
       <div class="hidden md:flex items-center gap-4">
         <span class="lang-toggle-btn font-bold text-sm cursor-pointer hover:text-vapor-300 select-none">SL <span class="opacity-50">/ EN</span></span>
         <a href="kontakt.html" class="btn-nav" data-i18n="nav.order">Naroči zdaj</a>
       </div>
 
-      <!-- Mobile Hamburger Button -->
+      <!-- Mobile: hamburger -->
       <button id="mobile-menu-btn" class="md:hidden z-50 p-2 text-ice-50 focus:outline-none" aria-label="Menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
 
-      <!-- Mobile Menu Overlay -->
+      <!-- Mobile overlay menu -->
       <div id="mobile-menu" class="fixed inset-0 bg-graphite-900 z-40 hidden flex-col items-center justify-center gap-8 text-xl font-medium opacity-0 transition-opacity duration-300">
         <a href="index.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.home">Domov</a>
         <a href="specifikacije.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.specs">Specifikacije</a>
         <a href="certifikati.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.certs">Certifikati</a>
         <a href="kontakt.html" class="nav-link hover:text-vapor-300 transition-colors" data-i18n="nav.contact">Kontakt</a>
         <span class="lang-toggle-btn font-bold cursor-pointer hover:text-vapor-300 select-none">SL <span class="opacity-50">/ EN</span></span>
-        <a href="kontakt.html" class="btn-primary mt-4" data-i18n="nav.order">Naroči zdaj</a>
+        <a href="kontakt.html" class="btn-primary mt-2" data-i18n="nav.order">Naroči zdaj</a>
       </div>
     </nav>
+
+
+
+
 
     <!-- Specs Hero -->
     <header class="py-16 md:py-24 container mx-auto px-6 md:px-12 text-center" data-aos="fade-up">
@@ -117,40 +126,54 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-graphite-900 pt-24 pb-12 border-t border-graphite-700">
-      <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                    <!-- Footer -->
+    <footer class="bg-graphite-900 pt-16 pb-10 border-t border-graphite-700">
+      <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         <div>
-          <a href="index.html" class="mb-6 block inline-block group flex items-center gap-3">
-            <img src="assets/diamond_icon_highres.png" alt="Diamond Line Icon" class="h-12 md:h-16 w-auto transition-transform duration-500 group-hover:scale-110" />
-            <img src="assets/diamond_line_text.png" alt="Diamond Line" class="h-8 md:h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />
+          <!-- Footer logo: same stacked layout as navbar -->
+          <a href="index.html" class="flex flex-col items-start gap-2 group mb-6 w-fit">
+            <img src="assets/diamond_icon_highres.png" alt="Diamond Line Icon"
+                 class="h-14 md:h-16 w-auto transition-transform duration-500 group-hover:scale-110 drop-shadow-lg" />
+            <img src="assets/diamond_line_text.png" alt="Diamond Line"
+                 class="h-6 md:h-7 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />
           </a>
           <p class="text-ice-100 mb-6 max-w-sm" data-i18n="footer.desc">Premium ekološko čiščenje in industrijska moč za vaš dom.</p>
+          <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-graphite-700 flex items-center justify-center hover:bg-vapor-500 hover:text-graphite-900 transition-colors">FB</a>
+            <a href="#" class="w-10 h-10 rounded-full bg-graphite-700 flex items-center justify-center hover:bg-vapor-500 hover:text-graphite-900 transition-colors">IG</a>
+          </div>
         </div>
-        
+
         <div>
-          <h3 class="font-bold text-xl mb-6" data-i18n="footer.links" data-i18n="footer.links">Povezave</h3>
+          <h3 class="font-bold text-xl mb-6" data-i18n="footer.links">Povezave</h3>
           <ul class="space-y-4 text-ice-100">
-            <li><a href="index.html" class="hover:text-vapor-500 transition-colors" data-i18n="nav.home" data-i18n="nav.home">Domov</a></li>
-            <li><a href="specifikacije.html" class="hover:text-vapor-500 transition-colors" data-i18n="nav.specs" data-i18n="nav.specs">Specifikacije</a></li>
-            <li><a href="certifikati.html" class="hover:text-vapor-500 transition-colors" data-i18n="nav.certs" data-i18n="nav.certs">Certifikati</a></li>
-            <li><a href="kontakt.html" class="hover:text-vapor-500 transition-colors" data-i18n="footer.contactBuy" data-i18n="footer.contactBuy">Kontakt & Nakup</a></li>
+            <li><a href="index.html" class="hover:text-vapor-500 transition-colors" data-i18n="nav.home">Domov</a></li>
+            <li><a href="specifikacije.html" class="hover:text-vapor-500 transition-colors" data-i18n="nav.specs">Specifikacije</a></li>
+            <li><a href="certifikati.html" class="hover:text-vapor-500 transition-colors" data-i18n="nav.certs">Certifikati</a></li>
+            <li><a href="kontakt.html" class="hover:text-vapor-500 transition-colors" data-i18n="footer.contactBuy">Kontakt &amp; Nakup</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="font-bold text-xl mb-6" data-i18n="nav.contact" data-i18n="nav.contact">Kontakt</h3>
+          <h3 class="font-bold text-xl mb-6" data-i18n="nav.contact">Kontakt</h3>
           <ul class="space-y-4 text-ice-100 leading-relaxed">
             <li><strong>Diamond Line s.p.</strong></li>
             <li>Ulica Milana Majcna 8,<br/>1000 Ljubljana</li>
             <li>P.E. Bravničarjeva ulica 11</li>
             <li>DŠ: 70541965</li>
-            <li class="pt-4" data-i18n="footer.sales" data-i18n="footer.sales">Vodja prodaje: Elvis Grbić</li>
+            <li class="pt-2" data-i18n="footer.sales">Vodja prodaje: Elvis Grbić</li>
             <li>+386 69 982 707</li>
           </ul>
         </div>
       </div>
+      <div class="container mx-auto px-6 md:px-12 text-center text-[#8b92a5] text-sm border-t border-graphite-700 pt-8">
+        &copy; 2026 Diamond Line. Vse pravice pridržane.
+      </div>
     </footer>
+
+
+
+
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
